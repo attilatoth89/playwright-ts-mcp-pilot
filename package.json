@@ -1,0 +1,24 @@
+{
+  "name": "playwright-ts-mcp-pilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end test automation demo: user registration and login, built with Playwright and TypeScript, assisted by the Playwright MCP server.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:register": "playwright test --project=register",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://rahulshettyacademy.com/client/",
+    "typecheck": "tsc --noEmit",
+    "install:browsers": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^22.10.0",
+    "dotenv": "^17.4.2",
+    "typescript": "^5.7.2"
+  }
+}
